@@ -3,3 +3,12 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  raining = false
+  if (raining)
+    p It is raining. Take an umbrella!
+  else
+    p No Rain. Take the bike!
+
+  script
+    alert('You can execute inline JavaScript through Jade')
